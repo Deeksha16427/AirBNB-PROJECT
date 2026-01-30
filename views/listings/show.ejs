@@ -13,7 +13,7 @@
          alt="listing_image">
         <div class="card-body">
             <p class="card-text">
-            <i>Owned by <%= listing.owner.username %> </i>
+            <i>Owned by <%= listing.owner ? listing.owner.username : "Unknown User" %> </i>
             </p>
             <p class="card-text">
             <%= listing.description %>
