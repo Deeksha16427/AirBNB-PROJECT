@@ -91,10 +91,10 @@ app.use("/", userRouter);
 
 
 
-
-
-app.use((req, res, next) => {
-    next(new ExpressError(404, "Page Not Found!"));
+app.use((req, res) => {
+    res.status(404).render("error.ejs", {
+        message: "Page Not Found!"
+    });
 });
 
 
