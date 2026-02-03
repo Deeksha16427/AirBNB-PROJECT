@@ -1,0 +1,117 @@
+/* ===============================
+   MOBILE DEVICES (max-width: 576px)
+================================= */
+@media (max-width: 576px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .fa-compass {
+    font-size: 1.6rem;
+  }
+
+  /* Cards */
+  .listing-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  /* Show page */
+  .show-img {
+    height: 200px;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btns .btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .f-info {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Map */
+  #map {
+    height: 250px;
+  }
+
+  /* Edit preview image */
+  .edit-preview-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* ===============================
+   TABLETS (max-width: 768px)
+================================= */
+@media (max-width: 768px) {
+
+  /* Cards image */
+  .card-img-top {
+    height: 230px;
+  }
+
+  /* Show page */
+  .show-img {
+    height: 250px;
+  }
+
+  .btns {
+    gap: 0.75rem;
+  }
+
+  /* Footer */
+  .f-info {
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* Map */
+  #map {
+    height: 300px;
+  }
+}
+
+/* ===============================
+   SMALL LAPTOPS (max-width: 992px)
+================================= */
+@media (max-width: 992px) {
+
+  /* Cards spacing */
+  .listing-card {
+    margin-bottom: 1.8rem;
+  }
+
+  /* Show page image */
+  .show-img {
+    height: 280px;
+  }
+
+  /* Map */
+  #map {
+    height: 350px;
+  }
+}
