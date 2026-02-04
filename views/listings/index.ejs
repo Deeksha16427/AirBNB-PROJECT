@@ -37,6 +37,12 @@
   }
 </style>
 
+  <button class="btn btn-outline-dark d-lg-none mb-2"
+        data-bs-toggle="collapse"
+        data-bs-target="#mobileFilters">
+  <i class="fa-solid fa-bars"></i> Filters
+</button>  
+<div id="mobileFilters" class="collapse d-lg-block">
     <div id="filters">
          <div class="filter" data-category="trending">
           <div><i class="fa-solid fa-fire"></i></div>
@@ -82,7 +88,7 @@
           <div><i class="fa-solid fa-ship"></i></div>
           <p>Boats</p>
          </div>
-
+        </div>
          <div class="tax-toggle">
           <div class="form-check-reverse form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
