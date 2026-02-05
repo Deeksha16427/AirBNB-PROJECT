@@ -216,9 +216,10 @@
 }
 
 @media (max-width: 991px) {
-  #mobileFilters {
-    overflow-x: auto;      
-    overflow-y: hidden;
+  #mobileFilters.collapse,
+  #mobileFilters.collapse.show {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
   }
   #filters {
     display: flex;
