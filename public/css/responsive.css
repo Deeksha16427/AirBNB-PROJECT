@@ -216,28 +216,33 @@
 }
 
 @media (max-width: 991px) {
+  #mobileFilters {
+    overflow-x: auto;      
+    overflow-y: hidden;
+  }
   #filters {
-    flex-direction: row;  
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 0.5rem 0.75rem;
+    width: max-content;
+    padding: 0.75rem 1rem;
   }
 
   .filter {
+    flex: 0 0 auto;
     margin-right: 1.25rem;
-    margin-top: 0.75rem;
-    min-width: 70px;
+    margin-top: 0;
+    min-width: 72px;
     text-align: center;
   }
 
   .tax-toggle {
     flex: 0 0 auto;
-    margin: 0.75rem 0 0 0.5rem;
+    margin-left: 1rem;
+    margin-top: 0;
   }
-  
-   #filters::-webkit-scrollbar {
+
+   #mobileFilters::-webkit-scrollbar {
     display: none;
   }
 }
