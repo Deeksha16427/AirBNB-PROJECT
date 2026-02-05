@@ -217,16 +217,27 @@
 
 @media (max-width: 991px) {
   #filters {
-    flex-direction: column;  
+    flex-direction: row;  
+    flex-wrap: nowrap;
     align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0.75rem;
   }
 
   .filter {
-    margin-right: 0;
-    margin-top: 1rem;
+    margin-right: 1.25rem;
+    margin-top: 0.75rem;
+    min-width: 70px;
+    text-align: center;
   }
 
   .tax-toggle {
-    margin: 1rem auto 0;
+    flex: 0 0 auto;
+    margin: 0.75rem 0 0 0.5rem;
+  }
+  
+   #filters::-webkit-scrollbar {
+    display: none;
   }
 }
